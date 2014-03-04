@@ -18,7 +18,6 @@ public class LuasCard extends Card {
 
     protected TextView mTitle;
     protected TextView mSecondaryTitle;
-    protected RatingBar mRatingBar;
 
     /**
      * Constructor with a custom inner layout
@@ -56,18 +55,6 @@ public class LuasCard extends Card {
 
     @Override
     public void setupInnerViewElements(ViewGroup parent, View view) {
-
-        //Retrieve elements
-        mTitle = (TextView) parent.findViewById(R.id.carddemo_myapps_main_inner_title);
-        mSecondaryTitle = (TextView) parent.findViewById(R.id.carddemo_myapps_main_inner_secondaryTitle);
-
-
-        if (mTitle!=null)
-            mTitle.setText("Jervis");
-
-        if (mSecondaryTitle!=null)
-            mSecondaryTitle.setText("Other Title");
-
 
 
     }

@@ -2,12 +2,16 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_marginLeft="3dp"
-    android:gravity="center_vertical"
-    android:layout_height="96dp">
+
+    android:layout_height="wrap_content">
 
    <ImageView
-       android:layout_width="match_parent"
-       android:layout_height="@dimen/card_base_empty_height" />
+       android:contentDescription="Map"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:adjustViewBounds="true"
+       android:src="@drawable/demomap"
+     />
 
 
 
