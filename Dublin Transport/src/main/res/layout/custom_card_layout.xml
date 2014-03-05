@@ -1,9 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_marginLeft="3dp"
-
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:paddingBottom="30dp">
 
    <ImageView
        android:contentDescription="Map"
@@ -13,6 +12,308 @@
        android:src="@drawable/demomap"
      />
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Inbound"
+            android:id="@+id/textView" />
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_height="30dp">
+
+                <TextView
+
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_weight="3"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/textView1"
+                    android:text="The Point"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_blue_light"
+
+                    android:textSize="18sp"
+                    android:gravity="right|bottom"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/duetime"
+                    android:text="Due"
+                    android:layout_marginRight="15dp" />
+
+
+
+
+                <View android:background="#ddd"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_alignBottom="@+id/textView1"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_height="30dp">
+
+                <TextView
+
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_weight="3"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/textView1"
+                    android:text="The Point"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_blue_light"
+
+                    android:textSize="18sp"
+                    android:gravity="right|bottom"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/duetime"
+                    android:text="Due"
+                    android:layout_marginRight="15dp" />
+
+
+
+
+                <View android:background="#ddd"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_alignBottom="@+id/textView1"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_height="30dp">
+
+                <TextView
+
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_weight="3"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/textView1"
+                    android:text="The Point"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_blue_light"
+
+                    android:textSize="18sp"
+                    android:gravity="right|bottom"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/duetime"
+                    android:text="Due"
+                    android:layout_marginRight="15dp" />
+
+
+
+
+                <View android:background="#ddd"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_alignBottom="@+id/textView1"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Outbound"
+            android:id="@+id/textView" />
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_weight="3"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/textView1"
+                    android:text="St. Stephen's Green"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_blue_light"
+
+                    android:textSize="18sp"
+                    android:gravity="right|bottom"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/duetime"
+                    android:text="Due"
+                    android:layout_marginRight="15dp" />
+
+
+
+
+                <View android:background="#ddd"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_alignBottom="@+id/textView1"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_height="30dp">
+
+                <TextView
+
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_weight="3"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/textView1"
+                    android:text="The Point"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_blue_light"
+
+                    android:textSize="18sp"
+                    android:gravity="right|bottom"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/duetime"
+                    android:text="Due"
+                    android:layout_marginRight="15dp" />
+
+
+
+
+                <View android:background="#ddd"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_alignBottom="@+id/textView1"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_height="30dp">
+
+                <TextView
+
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_weight="3"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/textView1"
+                    android:text="The Point"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_green_dark"
+
+                    android:textSize="18sp"
+                    android:gravity="right|bottom"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/duetime"
+                    android:text="Due"
+                    android:layout_marginRight="15dp" />
+
+
+
+
+                <View android:background="#ddd"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_alignBottom="@+id/textView1"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
 
 
 </LinearLayout>
