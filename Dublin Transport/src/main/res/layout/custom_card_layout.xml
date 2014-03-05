@@ -4,59 +4,68 @@
     android:layout_height="wrap_content"
     android:paddingBottom="30dp">
 
-   <ImageView
-       android:contentDescription="Map"
-       android:layout_width="fill_parent"
-       android:layout_height="fill_parent"
-       android:adjustViewBounds="true"
-       android:src="@drawable/demomap"
-     />
+    <ImageView
+        android:contentDescription="Map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:adjustViewBounds="true"
+        android:src="@drawable/demomap" />
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
-        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-        android:orientation="vertical"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp"
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
             android:layout_weight="1">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Inbound"
-            android:id="@+id/textView" />
-
-            <ListView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/inboundListView" />
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Inbound"
+                android:id="@+id/textView" />
+
+            <com.thehandsomecoder.dublintransport.layout.LuasListLayout
+                android:id="@+id/inboundListView"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/card_header_simple_title_margin_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
 
 
         </LinearLayout>
 
-        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-        android:orientation="vertical"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp"
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
             android:layout_weight="1">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Outbound"
-            android:id="@+id/textView" />
-
-            <ListView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/outboundListView" />
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Outbound"
+                android:id="@+id/textView" />
+
+            <com.thehandsomecoder.dublintransport.layout.LuasListLayout
+                android:id="@+id/outboundListView"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/card_header_simple_title_margin_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
 
 
         </LinearLayout>

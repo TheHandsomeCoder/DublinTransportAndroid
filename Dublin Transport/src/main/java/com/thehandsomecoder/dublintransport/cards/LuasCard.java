@@ -3,11 +3,17 @@ package com.thehandsomecoder.dublintransport.cards;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.thehandsomecoder.dublintransport.R;
+import com.thehandsomecoder.dublintransport.adapters.LuasTimeListAdapter;
+import com.thehandsomecoder.dublintransport.layout.LuasListLayout;
+import com.thehandsomecoder.dublintransport.luas.TramInformation;
+
+import java.util.ArrayList;
 
 import it.gmariotti.cardslib.library.internal.Card;
 
@@ -53,16 +59,15 @@ public class LuasCard extends Card {
         });
     }
 
-   /* public void setupInnerViewElements(ViewGroup parent, View view) {
-
-        TextView textView = (TextView) view.findViewById(R.id.carddemo_googlenow_main_inner_lastupdate);
-        textView.setText("Update 14:57, 16 September"); //should use R.string.
-
-        StockListLayout list = (StockListLayout) view.findViewById(R.id.carddemo_googlenow_main_inner_list);
-        ListStockAdapter mAdapter = new ListStockAdapter(super.getContext(), buildArrayHelper());
+    public void setupInnerViewElements(ViewGroup parent, View view) {
 
 
-        list.setAdapter(mAdapter);
+        LuasListLayout inboundList = (LuasListLayout) view.findViewById(R.id.inboundListView);
+        inboundList.setAdapter(new LuasTimeListAdapter(super.getContext(), buildArrayHelper()));
+
+        LuasListLayout outboundList = (LuasListLayout) view.findViewById(R.id.outboundListView);
+        outboundList.setAdapter(new LuasTimeListAdapter(super.getContext(), buildArrayHelper()));
+
 
     }
 
@@ -70,18 +75,17 @@ public class LuasCard extends Card {
     //------------------------------------------------------------------------------------------
 
 
-    public ArrayList<Stock> buildArrayHelper() {
+    public ArrayList<TramInformation> buildArrayHelper() {
 
-        Stock s1 = new Stock("GOOG", 889.07f, 0.00f, 0.00f);
-        Stock s2 = new Stock("AAPL", 404.27f, 0.00f, 0.00f);
-        Stock s3 = new Stock("ENI", 17.59f, 0.06f, 0.34f);
-        Stock s4 = new Stock("Don Jones", 15.376f, 0.00f, 0.00f);
+        TramInformation s1 = new TramInformation("Inbound",  "St. Stephens Green",  "Due");
+        TramInformation s2 = new TramInformation("Inbound",  "Harcourt Street",  "5");
+        TramInformation s3 = new TramInformation("Inbound",  "St. Stephens Green",  "10");
 
-        ArrayList<Stock> list = new ArrayList<Stock>();
+        ArrayList<TramInformation> list = new ArrayList<TramInformation>();
         list.add(s1);
         list.add(s2);
         list.add(s3);
-        list.add(s4);
+
         return list;
-    }*/
+    }
 }
